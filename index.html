@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="batinelamtochatp.css"/>
+    </head>
+    <body>
+        <center>
+            <form>
+    <div>
+        <label for="Altura">Altura:</label>
+        <input type="number" id="altura" />
+        <label for="Peso">Peso:</label>
+        <input type="number" id="peso" />
+    </div>
+    <div class="a1">
+        <button type="button" onclick="feijao()">Enviar</button>
+        <button type="reset" >Limpar</button>
+    </div>
+    <div>
+    <label for="Imc">IMC:</label>
+    <input type="number" id="imc" />
+        </div>
+
+<div class="oi">
+    <table>
+        <tr >
+            <th class="top">IMC</th>
+            <th class="top">Classificação</th>
+            <th class="top">Obesidade</th>
+          </tr>
+          <tr>
+            <td>Menor que 18.5</td>
+            <td>Magreza</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Entre 18.5 e 24.9</td>
+            <td>Normal</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Entre 25 e 29.9 </td>
+            <td>Sobrepeso</td>
+            <td>I</td>
+          </tr>
+          
+          <tr>
+            <td>Entre 30 e 39.9</td>
+            <td>Obesidade</td>
+            <td>II</td>
+          </tr>
+          
+          <tr>
+            <td>Maior que 40</td>
+            <td>Obesidade Grave</td>
+            <td>III</td>
+          </tr>
+        </table>
+        </div>
+    </form>
+    </center>
+    <script>
+        function feijao(){
+            let a = parseFloat(document.getElementById('altura').value)
+            let b = parseFloat(document.getElementById('peso').value)
+            let c = b/(a*a)
+            document.getElementById('imc').value = c
+        }
+    </script>
+        
+    </body>
+</html>
