@@ -58,15 +58,47 @@
           </tr>
         </table>
         </div>
+       
+        
     </form>
+    <div id='b' style=display:none>
+      <p id='bb'></p>
+    </div>
     </center>
-    <script>
+    <script type='text/javascript'>
         function feijao(){
             let a = parseFloat(document.getElementById('altura').value)
             let b = parseFloat(document.getElementById('peso').value)
-            let c = b/(a*a)
-            document.getElementById('imc').value = c
+           
+            let resultado =''
+        if(isNaN(a) || isNaN(b)){
+            if (isNaN(a)){
+                      resultado += "Digite sua Altura<br>"
+                      document.getElementById("b").style.backgroundColor = "red";
+                      document.getElementById('b').style.display ="block"
+                    }
+        
+                    
+                    if (isNaN(b)){
+                        resultado += "Digite seu Peso<br>"
+                        document.getElementById("b").style.backgroundColor = "red";
+                        document.getElementById('b').style.display ="block"
+                    }}
+                    else{
+                      document.getElementById('b').style.display ="block"
+                      document.getElementById("b").style.backgroundColor = "green";
+                      resultado += "Sucesso"
+
+                    }
+                    document.getElementById('bb').innerHTML = resultado;
+                let c = b/(a*a)
+            document.getElementById('imc').value = c;     
+                    
+              
+                    
+                   
         }
+                    
     </script>
         
     </body>
