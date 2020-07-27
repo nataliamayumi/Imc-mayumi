@@ -11,7 +11,7 @@ div{
     border-top: 50px;
     margin-top: 13px;
     width: 500px;
-    font-size: 15px;
+    font-size: 18px;
     color: #193441;
 }
 input{
@@ -23,7 +23,7 @@ button {
     border: none;
     padding: 7px 23px;
     border-radius: 10px;
-    font-size: 9px;
+    font-size: 14px;
 }
 button:hover{
     border-radius: 10px;
@@ -57,7 +57,7 @@ input{
     margin-bottom: 13px;
 }
 #b{
-    font-size: 12px;
+    font-size: 16px;
     flex: auto;
     margin-top:30px;
     border-radius: 10px;

@@ -19,7 +19,7 @@
     </div>
     <div>
     <label for="Imc">IMC:</label>
-    <input type="number" id="imc" />
+    <input type="number" id="imc" readonly />
         </div>
 
 <div class="oi">
@@ -74,23 +74,23 @@
         if(isNaN(a) || isNaN(b)){
             if (isNaN(a)){
                       resultado += "Digite sua Altura<br>"
-                      document.getElementById("b").style.backgroundColor = "red";
+                      document.getElementById("b").style.backgroundColor = "red"
                       document.getElementById('b').style.display ="block"
                     }
         
                     
                     if (isNaN(b)){
                         resultado += "Digite seu Peso<br>"
-                        document.getElementById("b").style.backgroundColor = "red";
+                        document.getElementById("b").style.backgroundColor = "red"
                         document.getElementById('b').style.display ="block"
                     }}
                     else{
                       document.getElementById('b').style.display ="block"
-                      document.getElementById("b").style.backgroundColor = "green";
+                      document.getElementById("b").style.backgroundColor = "green"
                       resultado += "Sucesso"
 
                     }
-                    document.getElementById('bb').innerHTML = resultado;
+                    document.getElementById('bb').innerHTML = resultado
                 let c = b/(a*a)
             document.getElementById('imc').value = c;     
                     
